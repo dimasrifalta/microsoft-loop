@@ -11,7 +11,7 @@ import { useUser } from '@clerk/nextjs'
 import { useRouter } from 'next/navigation'
 import { Progress } from '@/components/ui/progress'
 import { toast } from 'sonner'
-// import NotifiationBox from './NotifiationBox'
+import NotifiationBox from './NotifiationBox'
 
 const MAX_FILE=process.env.NEXT_PUBLIC_MAX_FILE_COUNT;
 
@@ -85,10 +85,10 @@ function SideNav({params}) {
     hidden md:block fixed bg-blue-50 p-5 shadow-md'>
         <div className='flex justify-between items-center'>
             <Logo/>
-            {/* <NotifiationBox>
+            <NotifiationBox>
             <Bell className='h-5 w-5 text-gray-500'/>
 
-            </NotifiationBox> */}
+            </NotifiationBox>
         </div>
         <hr className='my-5'></hr>
         <div>

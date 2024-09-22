@@ -69,6 +69,7 @@ function CreateWorkspace() {
             </h2>
             <div className='group-hover:opacity-40'>
               <Image
+                alt='cover'
                 src={coverImage}
                 width={400}
                 height={400}
