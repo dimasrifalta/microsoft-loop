@@ -1,11 +1,11 @@
 "use client"
 import Image from 'next/image'
 import { useRouter } from 'next/navigation'
-import React, { useEffect } from 'react'
+import React from 'react'
 
 function WorkspaceItemList({workspaceList}) {
 
- 
+  
   const router=useRouter();
   const OnClickWorkspaceItem=(workspaceId)=>{
       router.push('/workspace/'+workspaceId)
@@ -18,9 +18,7 @@ function WorkspaceItemList({workspaceList}) {
             hover:scale-105 transition-all cursor-pointer'
             onClick={()=>OnClickWorkspaceItem(workspace.id)}
             >
-                <Image
-                alt='cover' 
-                src={workspace?.coverImage} 
+                <Image src={workspace?.coverImage} 
                 width={400} height={200} alt='cover'
                 className='h-[150px] object-cover rounded-t-xl'
                 />

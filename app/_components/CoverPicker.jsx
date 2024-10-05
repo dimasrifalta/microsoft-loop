@@ -33,9 +33,7 @@ function CoverPicker({children,setNewCover}) {
                 className={`${selectedCover==cover?.imageUrl
                   &&'border-primary border-2'} p-1 rounded-md`}
                 >
-                  <Image 
-                  alt='cover'
-                  src={cover?.imageUrl} width={200} height={140}
+                  <Image src={cover?.imageUrl} width={200} height={140} alt='cover'
                   className='h-[70px] w-full rounded-md object-cover' />
                 </div>
               ))}
